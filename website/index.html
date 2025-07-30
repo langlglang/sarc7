@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarc7 - Sarcasm Detection and Generation Dataset</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="logo">
+        <h1>Sarc7</h1>
+      </div>
+      <div class="header-buttons">
+        <a href="#" class="btn btn-primary"> Paper</a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h2>Evaluating Sarcasm Detection and Generation with Seven Types and Emotion-Informed Techniques</h2>
+      <p class="hero-description">
+        Sarc7 is a comprehensive benchmark designed to evaluate sarcasm detection and generation capabilities across seven distinct sarcasm types. Our dataset provides a robust foundation for advancing sarcasm understanding in natural language processing.
+      </p>
+    </section>
+
+    <!-- Two Column Layout -->
+    <div class="two-column-layout">
+      <!-- Left Panel -->
+      <div class="left-panel">
+        <!-- About Section -->
+        <section class="about">
+          <h3>About Sarc7</h3>
+          <p>
+            Sarc7 introduces a novel approach to sarcasm evaluation by categorizing sarcasm into seven distinct types, each with unique linguistic patterns and emotional contexts. Our emotion-informed techniques provide deeper insights into sarcasm detection and generation, making this benchmark essential for researchers working on computational humor and sentiment analysis.
+          </p>
+        </section>
+
+        <section class="abstract">
+          <h3>Abstract</h3>
+          <p>
+            Sarcasm is a form of humor where expressions
+            convey meanings opposite to their literal interpretations. Classifying and generating sarcasm
+            using large language models is vital for interpreting human communication. Sarcasm poses
+            challenges for computational models, due to
+            its nuanced nature. We introduce Sarc7, a
+            benchmark that classifies 7 types of sarcasm:
+            self-deprecating, brooding, deadpan, polite, obnoxious, raging, and manic by annotating entries of the MUStARD dataset. Classification
+            was evaluated using zero-shot, few-shot, chainof-thought (CoT), and a novel emotion-based
+            prompting technique. We propose an emotionbased generation method developed by identifying key components of sarcasm–incongruity,
+            shock value, and context dependency. Our classification experiments show that Gemini 2.5,
+            using emotion-based prompting, outperforms
+            other setups with an F1 score of 0.3664. Human evaluators preferred our emotion-based
+            prompting, with 38.46% more successful generations than zero-shot prompting.
+          </p>
+        </section>
+
+        <!-- Download Section -->
+        <section class="download">
+          <h3>Download</h3>
+          <div class="download-grid">
+            <a href="../data/cleaned_sarcasm_data.json" class="download-card">
+              <div class="download-icon">📁</div>
+              <h4>Dataset (JSON)</h4>
+              <p>Complete sarcasm dataset with annotations</p>
+            </a>
+            <a href="../docs/paper.pdf" class="download-card">
+              <div class="download-icon">📄</div>
+              <h4>Paper (PDF)</h4>
+              <p>Detailed methodology and results</p>
+            </a>
+          </div>
+        </section>
+
+        <!-- Citation Section -->
+        <section class="citation">
+          <h3>Citation</h3>
+          <div class="citation-box">
+            <pre><code>@article{xiong2025sarc7,
+  title={Sarc7: Evaluating Sarcasm Detection and Generation with Seven Types and Emotion-Informed Techniques},
+  author={Xiong, Lang and Gao, Raina and Jeong, Alyssa and Fu, Yicheng and O'Brien, Sean and Sharma, Vasu and Zhu, Kevin},
+  journal={arXiv preprint arXiv:2506.00658},
+  year={2025}
+}</code></pre>
+            <button class="btn btn-copy" onclick="copyCitation()">Copy Citation</button>
+          </div>
+        </section>
+      </div>
+
+      <!-- Right Panel -->
+      <div class="right-panel">
+        <section class="image-placeholders">
+          <div class="image-section">
+            <h4>Dataset Statistics</h4>
+            <div class="image-container">
+              <img src="images/dataset_stats.png" alt="Dataset Statistics" class="content-image">
+            </div>
+          </div>
+          
+          <div class="image-section">
+            <h4>Model Performance</h4>
+            <div class="image-container">
+              <img src="images/model_performance.png" alt="Model Performance" class="content-image">
+            </div>
+          </div>
+          
+          <div class="image-section">
+            <h4>Sarcasm Type Distribution</h4>
+            <div class="image-container">
+              <img src="images/sarcasm_distribution.png" alt="Sarcasm Type Distribution" class="content-image">
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Team Section -->
+    <section class="team">
+      <h3>Sarc7 Team</h3>
+      <p>Sarc7 is developed by researchers committed to advancing sarcasm understanding in NLP:</p>
+      <ul class="team-list">
+        <li>Lang Xiong*</li>
+        <li>Raina Gao*</li>
+        <li>Alyssa Jeong*</li>
+        <li>Yicheng Fu</li>
+        <li>Sean O'Brien</li>
+        <li>Vasu Sharma</li>
+        <li>Kevin Zhu</li>
+      </ul>
+      <br>
+      <p>*Equal contribution authors</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+      <h3>Contact</h3>
+      <p>For questions about the dataset, collaboration opportunities, or to report issues, please contact us at: <a href="mailto:rainatg9@gmail.com">rainatg9@gmail.com</a></p>
+     </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>Sarc7 © 2025 Algoverse AI Research</p>
+    </footer>
+  </div>
+
+  <script>
+    function copyCitation() {
+      const citation = `@article{xiong2025sarc7,
+  title={Sarc7: Evaluating Sarcasm Detection and Generation with Seven Types and Emotion-Informed Techniques},
+  author={Xiong, Lang and Gao, Raina and Jeong, Alyssa and Fu, Yicheng and O'Brien, Sean and Sharma, Vasu and Zhu, Kevin},
+  journal={arXiv preprint arXiv:2506.00658},
+  year={2025}
+}`;
+      
+      navigator.clipboard.writeText(citation).then(() => {
+        const btn = document.querySelector('.btn-copy');
+        const originalText = btn.textContent;
+        btn.textContent = 'Copied!';
+        btn.style.backgroundColor = '#28a745';
+        
+        setTimeout(() => {
+          btn.textContent = originalText;
+          btn.style.backgroundColor = '#6c757d';
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>
+
+
+
+
